@@ -34,7 +34,7 @@ class BaseEnemy extends GameObject{
     }
 
     death(){
-        if (this.healthPoints <= 0){
+        if (this.healthPoints <= 0) {
             this.isAlive = false;
         }
     }

@@ -47,10 +47,7 @@ class Player extends GameObject {
         }
 
         if (this.controller["ArrowRight"]) {
-            this.x =
-                this.x + this.width < canvasWidth
-                    ? this.x + this.speed
-                    : canvasWidth - this.width;
+            this.x = this.x + this.width < canvasWidth ? this.x + this.speed : canvasWidth - this.width;
         }
 
         if (this.controller["ArrowUp"]) {
@@ -58,21 +55,12 @@ class Player extends GameObject {
         }
 
         if (this.controller["ArrowDown"]) {
-            this.y =
-                this.y + this.height < canvasHeight
-                    ? this.y + this.speed
-                    : canvasHeight - this.height;
+            this.y = this.y + this.height < canvasHeight ? this.y + this.speed : canvasHeight - this.height;
         }
 
         if (this.controller[" "]) {
             this.baseAttack();
         }
-
-        document.ontouchstart = (touchevent) => {
-            this.x = touchevent.touches[0].clientX - this.width / 2;
-            this.y = touchevent.touches[0].clientY - this.height / 2;
-            this.baseAttack(); // Simula la pressione del tasto spazio
-        };
     }
 
     baseAttack() {
@@ -90,8 +78,6 @@ class Player extends GameObject {
     }
     
     death(){
-        if (this.healthPoints <= 0){
-           
-        }
+        if (this.healthPoints <= 0) {}
     }
 }
