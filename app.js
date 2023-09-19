@@ -6,7 +6,7 @@ let canvasHeight = window.innerHeight;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
-window.addEventListener('resize', ()=> { // Resize la canvas per schermo intero
+window.addEventListener('resize', ()=> { // Ridimensiona la canvas per schermo intero
     canvasWidth = window.innerWidth;
     canvasHeight = window.innerHeight;
     canvas.width = canvasWidth;
