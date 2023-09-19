@@ -67,6 +67,12 @@ class Player extends GameObject {
         if (this.controller[" "]) {
             this.baseAttack();
         }
+
+        document.ontouchstart = (touchevent) => {
+            this.x = touchevent.touches[0].clientX - this.width / 2;
+            this.y = touchevent.touches[0].clientY - this.height / 2;
+            this.baseAttack(); // Simula la pressione del tasto spazio
+        };
     }
 
     baseAttack() {
