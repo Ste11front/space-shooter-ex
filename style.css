@@ -173,7 +173,7 @@ kbd {
     h2 {
         font-size: 115%;
         margin-bottom: 10%;
-        margin-left: 67%;
+        margin-left: 60%;
     }
 
     #game-over-btn {
@@ -199,7 +199,7 @@ kbd {
     .hp-container{
         width: 100px;
         height: 25px;
-        margin-left: 30%;
+        margin-left: 40%;
     }
 
     #youtube-btn, #fullscreen-btn {
