@@ -61,44 +61,6 @@ class Player extends GameObject {
         if (this.controller[" "]) {
             this.baseAttack();
         }
-
-        // Aggiungi un listener per l'evento touchstart
-document.addEventListener('touchstart', (event) => {
-    // Ottieni le coordinate del tocco
-    let touch = event.touches[0];
-    let touchX = touch.clientX;
-    let touchY = touch.clientY;
-
-    // Controlla in quale parte dello schermo è avvenuto il tocco
-    if (touchX < window.innerWidth / 2 && touchY > window.innerHeight / 2) {
-        // Se il tocco è nella parte inferiore sinistra dello schermo, simula la pressione del tasto spazio
-        this.controller[" "] = true;
-    } else if (touchX > window.innerWidth / 2 && touchY > window.innerHeight / 2) {
-        // Se il tocco è nella parte inferiore destra dello schermo, suddividi in quattro parti per simulare le frecce direzionali
-        let quadrantWidth = window.innerWidth / 4;
-        let quadrantHeight = window.innerHeight / 4;
-        if (touchX < quadrantWidth * 3) {
-            this.controller["ArrowLeft"] = true;
-        } else if (touchX > quadrantWidth * 3) {
-            this.controller["ArrowRight"] = true;
-        }
-        if (touchY < quadrantHeight * 3) {
-            this.controller["ArrowUp"] = true;
-        } else if (touchY > quadrantHeight * 3) {
-            this.controller["ArrowDown"] = true;
-        }
-    }
-});
-
-// Aggiungi un listener per l'evento touchend
-document.addEventListener('touchend', () => {
-    // Quando il tocco termina, rilascia tutti i controlli
-    this.controller[" "] = false;
-    this.controller["ArrowLeft"] = false;
-    this.controller["ArrowRight"] = false;
-    this.controller["ArrowUp"] = false;
-    this.controller["ArrowDown"] = false;
-});
     }
 
     baseAttack() {
