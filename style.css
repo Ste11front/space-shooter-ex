@@ -167,13 +167,13 @@ kbd {
 
 @media screen and (max-width: 900px) {
     .game-over h1 {
-        font-size: 50px;
+        font-size: 350%;
     }
 
     h2 {
         font-size: 115%;
         margin-bottom: 10%;
-        margin-left: 172px;
+        margin-left: 60%;
     }
 
     #game-over-btn {
@@ -210,7 +210,7 @@ kbd {
 
 @media screen and (min-width: 901px) and (max-width: 1080px) {
     .game-over h1 {
-        font-size: 145px;
+        font-size: 350% * 1.588;
     }
 
     h2 {
