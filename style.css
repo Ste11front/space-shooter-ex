@@ -242,7 +242,7 @@ kbd {
     .hp-container{
         width: 100px * 1.588;
         height: 25px * 1.588;
-        margin-left: 130%;
+        margin-left: 60%;
     }
 
     #youtube-btn, #fullscreen-btn {
