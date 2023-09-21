@@ -195,14 +195,14 @@ function animation() {
         } else if (player.healthPoints <= 2) {
             hpBar.style.backgroundColor = 'rgba(255, 38, 0, 0.544)'; // Rosso chiaro
         } else if (player.healthPoints <= 4) {
-            hpBar.style.backgroundColor = 'rgba(255, 255, 0, 0.544)'; // Giallo scuro
+            hpBar.style.backgroundColor = 'rgba(255, 255, 0, 0.544)'; // Giallo
         } else if (player.healthPoints <= 6) {
             hpBar.style.backgroundColor = 'rgba(208, 255, 0, 0.544)'; // Giallo chiaro
         } else if (player.healthPoints <= 8) {
             hpBar.style.backgroundColor = 'rgba(123, 255, 0, 0.544)'; // Verde chiaro
         }
         else {
-            hpBar.style.backgroundColor = 'rgba(0, 255, 0, 0.544)'; // Verde scuro
+            hpBar.style.backgroundColor = 'rgba(0, 255, 0, 0.544)'; // Verde
         }
         hpBar.style.width = hpWidth * player.healthPoints + "%";
 
