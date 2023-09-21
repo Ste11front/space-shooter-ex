@@ -61,6 +61,19 @@ class Player extends GameObject {
         if (this.controller[" "]) {
             this.baseAttack();
         }
+
+        // Funzione per il gamepad
+        const gamepads = navigator.getGamepads();
+        for (let i = 0; i < gamepads.length; i++) {
+            const gp = gamepads[i];
+            if (gp) {
+                this.controller["ArrowLeft"] = gp.buttons[14].pressed;
+                this.controller["ArrowRight"] = gp.buttons[15].pressed;
+                this.controller["ArrowUp"] = gp.buttons[12].pressed;
+                this.controller["ArrowDown"] = gp.buttons[13].pressed;
+                this.controller[" "] = gp.buttons[7].pressed;
+            }
+        }
     }
 
     baseAttack() {
