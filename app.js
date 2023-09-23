@@ -1,4 +1,4 @@
-// Ottienere l'elemento canvas e il suo contesto
+// Ottiene l'elemento canvas e il suo contesto
 let canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
