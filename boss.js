@@ -8,7 +8,7 @@ class Boss extends BaseEnemy {
         super(x, y, width * 2, height * 2);
         this.speed = 2;
         this.projectiles = [];
-        this.attackCD = 50;
+        this.attackCD = 38;
         this.healthPoints = 50;
         this.phase = 1;
         // Aggiunte le proprietà targetX e targetY
@@ -30,6 +30,11 @@ class Boss extends BaseEnemy {
             p.draw(ctx);
             p.move();
         })
+
+        this.projectiles = this.projectiles.filter(p => {
+            // Controlla se il proiettile è ancora vivo e all'interno del canvas
+            return p.isAlive && p.y > 0 && p.y < canvasHeight && p.x > 0 && p.x < canvasWidth;
+        });
 
         switch (this.phase) {
             case 1:

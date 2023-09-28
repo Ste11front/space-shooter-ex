@@ -257,7 +257,7 @@ function enemyCollision() {
                 enemy.healthPoints--;
                 pA.healthPoints--;
                 enemy.death();
-                if (!enemy.isAlive && enemy.score && !pA.isPlayer) {
+                if (!enemy.isAlive && enemy.score && !pA.isPlayer) { // && !pA.isPlayer -> I nemici distrutti collidendo col giocatore, non danno punteggio
                     player.score += enemy.score;
                 }
             }

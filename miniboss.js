@@ -21,6 +21,11 @@ class Miniboss extends BaseEnemy{
             p.move();
         })
 
+        this.projectiles = this.projectiles.filter(p => {
+            // Controlla se il proiettile è ancora vivo e all'interno del canvas
+            return p.isAlive && p.y > 0 && p.y < canvasHeight && p.x > 0 && p.x < canvasWidth;
+        });
+
         this.baseAttack();
     }
 
