@@ -106,7 +106,7 @@ h2 {
 }
 
 .hp-bar{
-    /* background-color: rgba(0, 187, 255, 0.544); */
+    /* color: rgba(0, 187, 255, 0.544); */
     height: 100%;
     width: 100%;
     box-shadow: 0px 0px 10px #888888;
