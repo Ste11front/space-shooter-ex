@@ -74,6 +74,22 @@ class Player extends GameObject {
                 this.controller[" "] = gp.buttons[7].pressed;
             }
         }
+
+        // Controlli per dispositivi mobili
+        document.getElementById('up-btn').addEventListener('touchstart', () => this.controller["ArrowUp"] = true);
+        document.getElementById('up-btn').addEventListener('touchend', () => this.controller["ArrowUp"] = false);
+
+        document.getElementById('down-btn').addEventListener('touchstart', () => this.controller["ArrowDown"] = true);
+        document.getElementById('down-btn').addEventListener('touchend', () => this.controller["ArrowDown"] = false);
+
+        document.getElementById('left-btn').addEventListener('touchstart', () => this.controller["ArrowLeft"] = true);
+        document.getElementById('left-btn').addEventListener('touchend', () => this.controller["ArrowLeft"] = false);
+
+        document.getElementById('right-btn').addEventListener('touchstart', () => this.controller["ArrowRight"] = true);
+        document.getElementById('right-btn').addEventListener('touchend', () => this.controller["ArrowRight"] = false);
+
+        document.getElementById('space-btn').addEventListener('touchstart', () => this.controller[" "] = true);
+        document.getElementById('space-btn').addEventListener('touchend', () => this.controller[" "] = false);
     }
 
     baseAttack() {

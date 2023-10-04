@@ -165,7 +165,23 @@ kbd {
   border: 1px solid #fff;
 }
 
+#mobile-controls-container {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
+    body {
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+        touch-action: none;
+    }
+
+    button:active {
+        background-color: #ddd;
+    }
+
     .game-over h1 {
         font-size: 350%;
     }
@@ -206,9 +222,21 @@ kbd {
         font-size: 80%;
         height: 6%
     }
+
+    #mobile-controls-container {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 901px) and (max-width: 1080px) {
+    body {
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */  
+        touch-action: none;    
+    }
+    
     .game-over h1 {
         font-size: 350% * 1.588;
     }
@@ -253,5 +281,49 @@ kbd {
 
     .buttons-container {
         margin-left: -15px;
+    }
+
+    #mobile-controls-container {
+        position: fixed;
+        bottom: 2%;
+        left: 11%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #up-btn, #left-btn, #right-btn, #down-btn, #space-btn {
+        background: transparent; 
+        border: none;
+        outline: none; 
+        font-size: 3em;
+    }
+
+    #up-btn {
+        position: absolute;
+        bottom: 100px;
+    }
+    
+    #left-btn {
+        position: absolute;
+        right: -12px;
+        bottom: 50px;
+    }
+    
+    #right-btn {
+        position: absolute;
+        left: -12px;
+        bottom: 50px;
+    }
+    
+    #down-btn {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #space-btn {
+        position: fixed;
+        right: 50px;
+        bottom: 55px;
     }
 }
