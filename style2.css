@@ -304,13 +304,13 @@ kbd {
     
     #left-btn {
         position: absolute;
-        right: -12px;
+        right: -15px;
         bottom: 50px;
     }
     
     #right-btn {
         position: absolute;
-        left: -12px;
+        left: -15px;
         bottom: 50px;
     }
     
