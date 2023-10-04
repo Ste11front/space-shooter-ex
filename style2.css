@@ -291,11 +291,6 @@ kbd {
         flex-direction: column;
         align-items: center;
     }
-
-    #up-btn:active, #left-btn:active, #right-btn:active, #down-btn:active, #space-btn:active {
-        box-shadow: 0 0 10px #9ecaed;
-        border-radius: 100px;
-    }
     
     #up-btn, #left-btn, #right-btn, #down-btn, #space-btn {
         background: transparent; 
