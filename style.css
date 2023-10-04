@@ -324,6 +324,7 @@ kbd {
     #space-btn {
         position: fixed;
         right: 50px;
-        bottom: 55px;
+        bottom: 50px;
+        font-size: 4em;
     }
 }
