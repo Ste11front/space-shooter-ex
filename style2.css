@@ -297,11 +297,6 @@ kbd {
         font-size: 3em;
     }
 
-    #up-btn:active, #left-btn:active, #right-btn:active, #down-btn:active, #space-btn:active {
-        box-shadow: 0 0 10px #9ecaed;
-        border-radius: 100%;
-    }
-    
     #up-btn {
         position: absolute;
         bottom: 100px;
@@ -309,13 +304,13 @@ kbd {
     
     #left-btn {
         position: absolute;
-        right: 4px;
+        right: 2px;
         bottom: 50px;
     }
     
     #right-btn {
         position: absolute;
-        left: 4px;
+        left: 2px;
         bottom: 50px;
     }
     
@@ -328,5 +323,7 @@ kbd {
         position: fixed;
         right: 50px;
         bottom: 50px;
+        box-shadow: 0 0 10px #9ecaed;
+        border-radius: 100%;
     }
 }
