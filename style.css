@@ -120,7 +120,7 @@ h2 {
     position: absolute;
     display: flex;
     align-items: center;
-    flex-direction: column;/
+    flex-direction: column;
 }
 
 #youtube-iframe {
@@ -147,7 +147,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-#controls, #controls-mobile {
+#controlsInfo, #controlsInfo-mobile {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 155%;
     color: #fff;
@@ -155,7 +155,7 @@ h2 {
     margin-bottom: 10%;
 }
 
-#controls-mobile {
+#controlsInfo-mobile {
     display: none;
 }
 
@@ -184,15 +184,15 @@ kbd {
         font-size: 80%;
     }
 
-    #controls, #controls-mobile {
+    #controlsInfo, #controlsInfo-mobile {
         font-size: 90%;
     }
 
-    #controls {
+    #controlsInfo {
         display: none;
     }
 
-    #controls-mobile {
+    #controlsInfo-mobile {
         display: block;
     }
 
@@ -227,15 +227,15 @@ kbd {
         font-size: 80% * 1.588;
     }
 
-    #controls, #controls-mobile {
+    #controlsInfo, #controlsInfo-mobile {
         font-size: 90% * 1.588;
     }
 
-    #controls {
+    #controlsInfo {
         display: none;
     }
 
-    #controls-mobile {
+    #controlsInfo-mobile {
         display: block;
     }
 

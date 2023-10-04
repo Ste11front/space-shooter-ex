@@ -16,8 +16,8 @@
             <h1></h1>
             <h2></h2>
             <button id="game-over-btn"></button>
-            <p id="controls"><kbd>SPACE</kbd> = Shoot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>🡩</kbd>&nbsp; <kbd>🡫</kbd>&nbsp; <kbd>🡪</kbd>&nbsp; <kbd>🡨</kbd> = Move</p>
-            <p id="controls-mobile"><kbd>SPACE</kbd> = Shoot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>↑</kbd>&nbsp; <kbd>↓</kbd>&nbsp; <kbd>→</kbd>&nbsp; <kbd>←</kbd> = Move</p>
+            <p id="controlsInfo"><kbd>SPACE</kbd> = Shoot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>🡩</kbd>&nbsp; <kbd>🡫</kbd>&nbsp; <kbd>🡪</kbd>&nbsp; <kbd>🡨</kbd> = Move</p>
+            <p id="controlsInfo-mobile"><kbd>💥</kbd> = Shoot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>⬆️</kbd>&nbsp; <kbd>⬇️</kbd>&nbsp; <kbd>➡️</kbd>&nbsp; <kbd>⬅️</kbd> = Move</p>
         </div>
     </div>
     <div class="player-ui">
@@ -25,14 +25,7 @@
             <div class="hp-container">
                 <div class="hp-bar" id="hp-bar"></div>
             </div>
-        </div>
-        <div id="controls-container">
-            <button id="up-btn">↑</button>
-            <button id="left-btn">←</button>
-            <button id="right-btn">→</button>
-            <button id="down-btn">↓</button>
-            <button id="space-btn">💥</button>
-        </div>        
+        </div>      
         <div class="score-container">
             <div class="best-score">
                 <span id="best-score-text"></span>
@@ -47,6 +40,13 @@
             <iframe id="youtube-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Qc_P1JrE18?start=10&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>        
     </div>
+    <div id="mobileControls-container">
+        <button id="up-btn">⬆️</button>
+        <button id="left-btn">⬅️</button>
+        <button id="right-btn">➡️</button>
+        <button id="down-btn">⬇️</button>
+        <button id="space-btn">💥</button>
+    </div>  
     <canvas id="canvas"></canvas>
 </body>
 

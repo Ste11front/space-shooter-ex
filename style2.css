@@ -120,7 +120,7 @@ h2 {
     position: absolute;
     display: flex;
     align-items: center;
-    flex-direction: column;/
+    flex-direction: column;
 }
 
 #youtube-iframe {
@@ -147,7 +147,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-#controls, #controls-mobile {
+#controlsInfo, #controlsInfo-mobile {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 155%;
     color: #fff;
@@ -155,7 +155,7 @@ h2 {
     margin-bottom: 10%;
 }
 
-#controls-mobile {
+#controlsInfo-mobile {
     display: none;
 }
 
@@ -165,41 +165,8 @@ kbd {
   border: 1px solid #fff;
 }
 
-#controls-container {
-    position: fixed;
-    bottom: 20px;
-    left: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#up-btn {
-    position: absolute;
-    bottom: 20px;
-}
-
-#left-btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-#right-btn {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-#down-btn {
-    position: absolute;
-    top: 0;
-}
-
-#space-btn {
-    position: fixed;
-    right: 5px;
-    bottom: 0;
+#mobileControls-container {
+    display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -221,15 +188,15 @@ kbd {
         font-size: 80%;
     }
 
-    #controls, #controls-mobile {
+    #controlsInfo, #controlsInfo-mobile {
         font-size: 90%;
     }
 
-    #controls {
+    #controlsInfo {
         display: none;
     }
 
-    #controls-mobile {
+    #controlsInfo-mobile {
         display: block;
     }
 
@@ -242,6 +209,17 @@ kbd {
     #youtube-btn, #fullscreen-btn {
         font-size: 80%;
         height: 6%
+    }
+
+    button {
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+    }
+
+    #mobileControls-container {
+        display: none;
     }
 }
 
@@ -264,15 +242,15 @@ kbd {
         font-size: 80% * 1.588;
     }
 
-    #controls, #controls-mobile {
+    #controlsInfo, #controlsInfo-mobile {
         font-size: 90% * 1.588;
     }
 
-    #controls {
+    #controlsInfo {
         display: none;
     }
 
-    #controls-mobile {
+    #controlsInfo-mobile {
         display: block;
     }
 
@@ -290,5 +268,56 @@ kbd {
 
     .buttons-container {
         margin-left: -15px;
+    }
+
+    button {
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+    }
+
+    #mobileControls-container {
+        position: fixed;
+        bottom: 8%;
+        left: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #up-btn, #left-btn, #right-btn, #down-btn, #space-btn {
+        background: transparent; 
+        border: none;
+        /* outline: none;  */
+        font-size: 2em;
+    }
+    
+    #up-btn {
+        position: absolute;
+        bottom: 45px;
+    }
+    
+    #left-btn {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+    }
+    
+    #right-btn {
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+    }
+    
+    #down-btn {
+        position: absolute;
+        top: 0;
+    }
+    
+    #space-btn {
+        position: fixed;
+        right: 4%;
+        bottom: 8%;
     }
 }
