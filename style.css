@@ -147,7 +147,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-#controlsInfo, #controlsInfo-mobile {
+#controls-info, #controls-info-mobile {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 155%;
     color: #fff;
@@ -155,7 +155,7 @@ h2 {
     margin-bottom: 10%;
 }
 
-#controlsInfo-mobile {
+#controls-info-mobile {
     display: none;
 }
 
@@ -184,15 +184,15 @@ kbd {
         font-size: 80%;
     }
 
-    #controlsInfo, #controlsInfo-mobile {
+    #controls-info, #controls-info-mobile {
         font-size: 90%;
     }
 
-    #controlsInfo {
+    #controls-info {
         display: none;
     }
 
-    #controlsInfo-mobile {
+    #controls-info-mobile {
         display: block;
     }
 
@@ -227,15 +227,15 @@ kbd {
         font-size: 80% * 1.588;
     }
 
-    #controlsInfo, #controlsInfo-mobile {
+    #controls-info, #controls-info-mobile {
         font-size: 90% * 1.588;
     }
 
-    #controlsInfo {
+    #controls-info {
         display: none;
     }
 
-    #controlsInfo-mobile {
+    #controls-info-mobile {
         display: block;
     }
 
