@@ -299,7 +299,7 @@ kbd {
 
     #up-btn:active, #left-btn:active, #right-btn:active, #down-btn:active, #space-btn:active {
         box-shadow: 0 0 10px #9ecaed;
-        border-radius: 40%;
+        border-radius: 100%;
     }
     
     #up-btn {
@@ -309,13 +309,13 @@ kbd {
     
     #left-btn {
         position: absolute;
-        right: 8px;
+        right: 4px;
         bottom: 50px;
     }
     
     #right-btn {
         position: absolute;
-        left: 8px;
+        left: 4px;
         bottom: 50px;
     }
     
