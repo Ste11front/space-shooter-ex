@@ -234,13 +234,7 @@ kbd {
         -ms-user-select: none;      /* IE 10+ */
         user-select: none;          /* Likely future */      
     }
-
-    button:active, button:focus {
-        background-color: #ddd;
-        outline: none;    
-    }
     
-
     .game-over h1 {
         font-size: 350% * 1.588;
     }
@@ -289,8 +283,8 @@ kbd {
 
     #mobile-controls-container {
         position: fixed;
-        bottom: 8%;
-        left: 8%;
+        bottom: 1%;
+        left: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -299,35 +293,40 @@ kbd {
     #up-btn, #left-btn, #right-btn, #down-btn, #space-btn {
         background: transparent; 
         border: none;
-        /* outline: none;  */
-        font-size: 2em;
+        outline: none; 
+        font-size: 3em;
+    }
+
+    #up-btn:active, #left-btn:active, #right-btn:active, #down-btn:active, #space-btn:active {
+        box-shadow: 0 0 10px #9ecaed;
+        border-radius: 40%;
     }
     
     #up-btn {
         position: absolute;
-        bottom: 50px;
+        bottom: 100px;
     }
     
     #left-btn {
         position: absolute;
-        right: 10px;
-        bottom: 2px;
+        right: 8px;
+        bottom: 50px;
     }
     
     #right-btn {
         position: absolute;
-        left: 10px;
-        bottom: 2px;
+        left: 8px;
+        bottom: 50px;
     }
     
     #down-btn {
         position: absolute;
-        top: 0;
+        bottom: 0;
     }
     
     #space-btn {
         position: fixed;
-        right: 4%;
-        bottom: 8%;
+        right: 50px;
+        bottom: 50px;
     }
 }
