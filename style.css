@@ -293,12 +293,10 @@ kbd {
     }
     
     #up-btn, #left-btn, #right-btn, #down-btn, #space-btn {
-        /* background: transparent;  */
+        background: transparent; 
         border: none;
         outline: none; 
         font-size: 3em;
-        width: 80px;
-        height: 80px;
     }
 
     #up-btn {
