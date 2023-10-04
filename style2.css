@@ -283,7 +283,7 @@ kbd {
 
     #mobile-controls-container {
         position: fixed;
-        bottom: 1%;
+        bottom: 2%;
         left: 10%;
         display: flex;
         flex-direction: column;
@@ -304,13 +304,13 @@ kbd {
     
     #left-btn {
         position: absolute;
-        right: 0;
+        right: -5px;
         bottom: 50px;
     }
     
     #right-btn {
         position: absolute;
-        left: 0;
+        left: -5px;
         bottom: 50px;
     }
     
