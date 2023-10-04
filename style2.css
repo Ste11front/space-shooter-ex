@@ -299,19 +299,19 @@ kbd {
 
     #up-btn {
         position: absolute;
-        bottom: 100px;
+        bottom: 120px;
     }
     
     #left-btn {
         position: absolute;
-        right: -15px;
-        bottom: 50px;
+        right: -12px;
+        bottom: 60px;
     }
     
     #right-btn {
         position: absolute;
-        left: -15px;
-        bottom: 50px;
+        left: -12px;
+        bottom: 60px;
     }
     
     #down-btn {
