@@ -62,7 +62,7 @@ class Player extends GameObject {
             this.baseAttack();
         }
 
-        // Funzione per il gamepad
+        // Funzione per il gamepad (FireFox)
         const gamepads = navigator.getGamepads();
         for (let i = 0; i < gamepads.length; i++) {
             const gp = gamepads[i];
