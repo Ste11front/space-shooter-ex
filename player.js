@@ -66,7 +66,7 @@ class Player extends GameObject {
         const gamepads = navigator.getGamepads();
         for (let i = 0; i < gamepads.length; i++) {
             const gp = gamepads[i];
-            if (gp) {
+            if (gp && (gp.id.includes("054c-09cc-Wireless Controller") || gp.id.includes("054c-05c4-Wireless Controller"))) { // && se gp.id è quello di un DualShock 4
                 this.controller["ArrowLeft"] = gp.buttons[14].pressed;
                 this.controller["ArrowRight"] = gp.buttons[15].pressed;
                 this.controller["ArrowUp"] = gp.buttons[12].pressed;
