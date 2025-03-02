@@ -1,4 +1,4 @@
-// Dopo un certo tempo deve spawnare un boss con 3 fasi (con uno switch)
+// Dopo un certo tempo deve apparire (spawn) un boss con 3 fasi (con uno switch)
 // Fase 1: Il boss si crea fuori dalla mappa e scende dall'alto fermandosi al centro
 // Fase 2: Il boss diventa un random walker (si muove a caso per la canvas). Quando arriva a metà vita entra nella fase 3 
 // Fase 3: Il boss spara dai quattro lati contemporaneamente
